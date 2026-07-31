@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload — http-server</title>
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            background: #eef2f7;
+            color: #1a1a2e;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 14px;
+            padding: 44px 52px;
+            max-width: 460px;
+            width: 100%;
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+        }
+
+        .label {
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: #6c7be8;
+            margin-bottom: 14px;
+        }
+
+        h1 {
+            font-size: 26px;
+            font-weight: 700;
+            line-height: 1.3;
+            margin-bottom: 24px;
+        }
+
+        input[type="file"] {
+            display: block;
+            width: 100%;
+            font-size: 14px;
+            color: #6b7280;
+            margin-bottom: 18px;
+        }
+
+        button {
+            background: #6c7be8;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            padding: 11px 24px;
+            font-size: 14px;
+            font-family: inherit;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        button:hover { background: #5a6ad6; }
+
+        .divider {
+            border: none;
+            border-top: 1px solid #ebebeb;
+            margin: 28px 0;
+        }
+
+        a {
+            font-size: 14px;
+            color: #6c7be8;
+            text-decoration: none;
+            text-underline-offset: 3px;
+        }
+
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="label">http-server</div>
+        <h1>File Upload</h1>
+        <form action="/uploads/" method="POST" enctype="multipart/form-data">
+            <input type="file" name="file">
+            <button type="submit">Upload</button>
+        </form>
+        <hr class="divider">
+        <a href="/uploads/">View uploaded files</a> &nbsp;·&nbsp; <a href="/">Home</a>
+    </div>
+</body>
+</html>

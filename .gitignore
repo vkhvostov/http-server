@@ -1,0 +1,78 @@
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+*.a
+*.so
+*.d
+srcs/**/*.o
+includes/**/*.gch
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Linker files
+*.ilk
+
+# Debugger Files
+*.pdb
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+http-server
+
+# Debug information files
+*.dwo
+
+# IDEs and editors 
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# System files
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+
+# Test Artifacts & Logs
+*.log
+post_test_file
+cgi_out_*
+
+www/uploads/*
+!www/uploads/.gitkeep
+
+# Python/Testing
+__pycache__/
+*.pyc
+
+# AI agent files
+CLAUDE.MD
+
+# Local sandbox / scratch code (not part of http-server)
+learning/
